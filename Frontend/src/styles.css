@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.font_bold{
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+/* regular style toast */
+@import 'ngx-toastr/toastr';

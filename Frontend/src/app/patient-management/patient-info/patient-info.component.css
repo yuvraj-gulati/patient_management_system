@@ -1,0 +1,68 @@
+
+
+input::file-selector-button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(65, 5, 204);
+    color: #ffffff;
+    background-color: rgb(14, 46, 189);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.subNav{
+  background-color: #EEEDEB;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.search-container{
+  /* background-color: #F7E7DC; */
+  background-color: #F3F7EC;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.searchingInput{
+  width: 350px; 
+  border: 2px solid rgb(99, 6, 199);
+}
+
+.customSearchingBtn{
+  padding: 0 15px; 
+  color: white; 
+  background-color: rgb(99, 6, 199);
+}
+
+
+
+
+.custom_select_role{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    padding: 5px;
+    height: 35px;
+  }
+  
+  .custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+    width: 90px;
+    height: 35px;
+    margin-left: 5px;
+    border: 2px solid rgb(110, 41, 188);
+  }
+  
+  .select-option{
+    padding: 10px;
+  }
+  
+  .custom-select .select-option:checked {
+    font-weight: bold; /* Example: Highlight the selected option */
+    background-color: #f0f0f0; /* Example: Highlight background */
+  }

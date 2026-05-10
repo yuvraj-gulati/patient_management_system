@@ -1,0 +1,17 @@
+{
+  "1": [
+    { "name": "Maharashtra", "id": 101 },
+    { "name": "Karnataka", "id": 102 },
+    { "name": "Tamil Nadu", "id": 103 }
+  ],
+  "2": [
+    { "name": "New South Wales", "id": 201 },
+    { "name": "Victoria", "id": 202 },
+    { "name": "Queensland", "id": 203 }
+  ],
+  "3": [
+    { "name": "Tokyo", "id": 301 },
+    { "name": "Osaka", "id": 302 },
+    { "name": "Hokkaido", "id": 303 }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "IN": [
+    { "id": "UP", "name": "Uttar Pradesh" },
+    { "id": "MH", "name": "Maharashtra" },
+    { "id": "DL", "name": "Delhi" }
+  ],
+  "AU": [
+    { "id": "NSW", "name": "New South Wales" },
+    { "id": "VIC", "name": "Victoria" },
+    { "id": "QLD", "name": "Queensland" }
+  ],
+  "US": [
+    { "id": "CA", "name": "California" },
+    { "id": "TX", "name": "Texas" },
+    { "id": "NY", "name": "New York" }
+  ],
+  "CA": [
+    { "id": "ON", "name": "Ontario" },
+    { "id": "BC", "name": "British Columbia" },
+    { "id": "QC", "name": "Quebec" }
+  ],
+  "UK": [
+    { "id": "ENG", "name": "England" },
+    { "id": "SCT", "name": "Scotland" },
+    { "id": "WLS", "name": "Wales" }
+  ],
+  "DE": [
+    { "id": "BE", "name": "Berlin" },
+    { "id": "BW", "name": "Baden-Württemberg" },
+    { "id": "BY", "name": "Bavaria" }
+  ],
+  "FR": [
+    { "id": "IDF", "name": "Île-de-France" },
+    { "id": "PAC", "name": "Provence-Alpes-Côte d'Azur" },
+    { "id": "NAQ", "name": "Nouvelle-Aquitaine" }
+  ],
+  "JP": [
+    { "id": "TK", "name": "Tokyo" },
+    { "id": "OS", "name": "Osaka" },
+    { "id": "KN", "name": "Kanagawa" }
+  ],
+  "CN": [
+    { "id": "BJ", "name": "Beijing" },
+    { "id": "SH", "name": "Shanghai" },
+    { "id": "GD", "name": "Guangdong" }
+  ],
+  "BR": [
+    { "id": "SP", "name": "São Paulo" },
+    { "id": "RJ", "name": "Rio de Janeiro" },
+    { "id": "MG", "name": "Minas Gerais" }
+  ]
+}

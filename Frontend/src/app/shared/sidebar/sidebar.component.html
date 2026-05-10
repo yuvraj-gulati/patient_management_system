@@ -1,0 +1,56 @@
+<div class="main d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary d-none d-lg-block" style="width: 20%; height: 100vh; position: fixed;">
+
+    <a routerLink="/patient/dashboard" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <span class="fs-4 text-info font_bold logo">Patient Project </span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a routerLink="/patient/dashboard" [ngClass]="active === 1 ? 'active' : 'link-body-emphasis'" class="nav-link link" aria-current="page">
+          <i class="fa-solid fa-house" style="margin-right: 2px;"></i>
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a routerLink="/patient_Management/patientInfo" [ngClass]="active === 2 ? 'active' : 'link-body-emphasis'" class="nav-link link">
+          <i class="fa-solid fa-hospital-user" style="margin-right: 2px;"></i>
+          Patient Management
+        </a>
+      </li>
+      <!-- <li>
+        <a routerLink="/provider_Management/providerInfo" [ngClass]="active === 3 ? 'active' : 'link-body-emphasis'" class="nav-link link">
+          <i class="fa-solid fa-user-doctor" style="margin-right: 2px;"></i>
+          Provider Management
+        </a>
+      </li> -->
+      <!-- <li>
+        <a routerLink="/organization_Management/organizationInfo" [ngClass]="active === 4 ? 'active' : 'link-body-emphasis'" class="nav-link link d-flex">
+          <i class="fa-solid fa-people-group mt-1"></i>
+          <span style="font-size: 15px; margin-left: 5px;">Orginazation Management</span>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+
+  <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary d-block d-lg-none" style="width: 4.5rem; height: 100vh;">
+    <a routerLink="/patient/dashboard" class="d-block p-3 link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
+      <span>SD</span>
+    </a>
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li class="nav-item">
+        <a routerLink="/patient/dashboard" [ngClass]="{ 'active': active === 1 }" class="nav-link py-3 border-bottom rounded-0" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
+            <i class="fa-solid fa-house"></i>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/patient_Management/patientInfo" [ngClass]="{ 'active': active === 2 }" class="nav-link py-3 border-bottom rounded-0" title="Dashboard" data-bs-toggle="tooltip" data-bs-placement="right">
+            <i class="fa-solid fa-hospital-user"></i>        
+        </a>
+      </li>
+      <li>
+        <a routerLink="/provider_Management" [ngClass]="{ 'active': active === 3 }" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
+            <i class="fa-solid fa-user-doctor"></i>
+        </a>
+      </li>
+    </ul>
+  </div>

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg " style="background-color: #00bcd4; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);">
+    <div class="container p-4">
+        <!-- <a class="navbar-brand text-light fs-3" style="font-weight: bold;" routerLink="">smartData Group 8</a> -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link text-light font-bold" routerLink="/profile">Profile</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-light font-bold" style="cursor: pointer;" (click)="logout()">Log out</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>

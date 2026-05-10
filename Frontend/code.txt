@@ -1,0 +1,59 @@
+
+##Frontend
+
+
+                <div class="col-md-6">
+                  <input type="file" (change)="handleFileInput($event)">
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-primary" (click)="uploadFile(selectedFile)">Upload File</button>
+                </div>
+ 
+
+                  <button type="button" class="btn btn-primary" (click)="downloadFile()">
+                    Download file
+                  </button>
+
+
+
+---ts file
+
+interface Patient {
+  patientName: string;
+  patientMobileNumber: string;
+  patientAddress: string;
+  patientGender: string;
+}
+
+  
+  downloadFile(): void {
+    this.http.get('https://localhost:44364/api/Patient/GenerateExcel', { responseType: 'arraybuffer' })
+     .subscribe(response => {
+        const blob = new Blob([response], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'MyData.xlsx';
+        a.click();
+        window.URL.revokeObjectURL(url);
+      });
+  }
+
+  handleFileInput(event: any) {
+    this.selectedFile = event.target.files[0];
+  }
+
+  uploadFile(file: File) {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    this.http.post('https://localhost:44364/api/Patient/UploadExcel', formData)
+      .subscribe(response => {
+        console.log(response);
+        console.log("hiii");
+      }, error => {
+        console.error(error);
+      });
+  }
+
+

@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "dgSpecHash": "vl1NK/DOCxcfeZSyYAtvmFYov6I8CylV7vZ9nwDIK+ThV9B7RLNQJsH4Z/5pchBDms+bFNV1y4KKUzJVEKr+pw==",
+  "success": false,
+  "projectFilePath": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend.Service\\Group8Backend.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.7\\microsoft.aspnetcore.authentication.jwtbearer.8.0.7.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.0\\microsoft.identitymodel.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.0\\microsoft.identitymodel.jsonwebtokens.8.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.0\\microsoft.identitymodel.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.0\\microsoft.identitymodel.tokens.8.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.0\\system.identitymodel.tokens.jwt.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\office\\office1\\Prashant\\Full stack\\Backend\\Group8Backend.Shared\\Group8Backend.Shared.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Group8Backend.Shared\\Group8Backend.Shared.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\office\\office1\\Prashant\\Full stack\\Backend\\Group8Backend.Domain\\Group8Backend.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Group8Backend.Domain\\Group8Backend.Domain.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

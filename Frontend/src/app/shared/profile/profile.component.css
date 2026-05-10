@@ -1,0 +1,32 @@
+.box-area {
+  width: 950px;
+  margin-top: 10px;
+}
+
+.wrapper_box {
+  padding: 40px 30px 40px 40px;
+}
+
+label {
+  font-weight: 500;
+}
+
+.user_select {
+  background-color: rgb(247, 246, 246);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .box-area {
+    margin: 0 10px;
+  }
+
+  .left-box {
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .right-box {
+    padding: 20px;
+  }
+}

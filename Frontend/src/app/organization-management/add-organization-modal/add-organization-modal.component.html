@@ -1,0 +1,189 @@
+<!-- <div class="modal fade" id="addOrganizationModal" tabindex="-1" role="dialog"
+  aria-labelledby="addOrganizationModalTitle" aria-hidden="true" (hidden.bs.modal)="onModalHidden()">
+  <div class="modal-dialog modal-dialog-centered" role="form">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLongTitle">
+          <i class="fa-solid fa-plus"></i>
+          {{ editMode ? "Edit Organization" : "Add Organization" }}
+        </h5>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addOrganizationForm" (submit)="onSubmitAddOrganization()" autocomplete="off">
+          <div class="mb-3 col-md-12">
+            <label class="form-label mb-2 text-muted" for="organizationName">Organization Name <span
+                class="text-danger fs-5">*</span></label>
+            <input id="organizationName" type="text" class="form-control mb-2 form-control-lg bg-light fs-6"
+              name="organizationName" formControlName="organizationName" placeholder="Enter Organization Name"
+              autofocus />
+
+            <span class="text-danger" *ngIf="
+                addOrganizationForm.get('organizationName')?.touched &&
+                addOrganizationForm
+                  .get('organizationName')
+                  ?.hasError('required')
+              ">* Organization Name Field is required</span>
+          </div>
+
+          <div class="mb-3 col-md-12">
+            <label class="form-label mb-2 text-muted" for="businessKey">Business Key <span
+                class="text-danger fs-5">*</span></label>
+            <input id="businessKey" type="text" class="form-control mb-2 form-control-lg bg-light fs-6"
+              name="businessKey" formControlName="businessKey" placeholder="Enter Organization Business Key"
+              autofocus />
+
+            <span class="text-danger" *ngIf="
+                addOrganizationForm.get('businessKey')?.touched &&
+                addOrganizationForm.get('businessKey')?.hasError('required')
+              ">* Business Key Field is required</span>
+          </div>
+
+          <div class="mb-3 col-md-12">
+            <label class="form-label mb-2 text-muted" for="organizationEmail">Organization Email <span
+                class="text-danger fs-5">*</span></label>
+            <input id="organizationEmail" type="text" class="form-control mb-2 form-control-lg bg-light fs-6"
+              name="organizationEmail" formControlName="organizationEmail" placeholder="Enter Organization Email"
+              autofocus />
+
+            <span class="text-danger" *ngIf="
+                addOrganizationForm.get('organizationEmail')?.touched &&
+                addOrganizationForm
+                  .get('organizationEmail')
+                  ?.hasError('required')
+              ">* Organization Email Field is required</span>
+            <span class="text-danger" *ngIf="
+                addOrganizationForm.get('organizationEmail')?.touched &&
+                addOrganizationForm.get('organizationEmail')?.hasError('email')
+              ">* Must have a valid mail</span>
+          </div>
+
+          <div class="mb-3 col-md-12 d-flex flex-column">
+            <label for="organizationFaxNumber" class="form-label mb-2 text-muted">Organization Fax Number
+              <span class="text-danger fs-5">*</span></label>
+
+            <input name="organizationFaxNumber" id="organizationFaxNumber"
+              class="form-control mb-2 form-label bg-light fx-6" formControlName="organizationFaxNumber"
+              [showMaskTyped]="true" prefix="+" type="text" mask="(0)-(000)-000-0000" />
+
+            <span class="text-danger" *ngIf="
+                addOrganizationForm.get('organizationFaxNumber')?.touched &&
+                addOrganizationForm
+                  .get('organizationFaxNumber')
+                  ?.hasError('required')
+              ">* Organization Fax Number Field is required</span>
+          </div>
+
+          <div class="mb-3 col-md-12 d-flex flex-column">
+            <label for="mobileNumber" class="form-label mb-2 text-muted">Organization Phone Number
+              <span class="text-danger fs-5">*</span></label>
+
+            <input name="organizationMobileNumber" id="organizationMobileNumber"
+              class="form-control mb-2 form-label bg-light fx-6" formControlName="organizationMobileNumber"
+              prefix="+91 " [showMaskTyped]="true" type="text" mask="(000)-000-0000" />
+
+            <span class="text-danger" *ngIf="
+                addOrganizationForm.get('organizationMobileNumber')?.touched &&
+                addOrganizationForm
+                  .get('organizationMobileNumber')
+                  ?.hasError('required')
+              ">* Organization Phone Number Field is required</span>
+          </div>
+
+          <div formArrayName="organizationAddressList">
+            <div *ngFor="let address of organizationAddressListArray().controls ; let i = index;">
+              <div [formGroupName]="i">
+                <div class="mb-3">
+                  <label for="country" class="form-label mb-2 text-muted">Country:<span
+                      class="text-danger fs-5">*</span></label>
+                  <select id="country" formControlName="organization_country" class="form-select user_select"
+                    (change)="onCountryChange(i)">
+                    <option value="" disabled selected>Select your Country</option>
+                    <option *ngFor="let country of countries" [value]="country.name">{{ country.name }}</option>
+                  </select>
+                  <span class="text-danger"
+                    *ngIf="address.get('organization_country')?.invalid && address.get('organization_country')?.touched">
+                    Country is required.
+                  </span>
+                </div>
+
+                <div class="mb-3" *ngIf="address.get('organization_country')?.value">
+                  <label for="state" class="form-label mb-2 text-muted">State:<span
+                      class="text-danger fs-5">*</span></label>
+                  <select id="state" formControlName="organization_state" class="form-select user_select"
+                    (change)="onStateChange(i)">
+                    <option value="" disabled selected>Select your State</option>
+                    <option *ngFor="let state of filteredStates[i]" [value]="state.name">{{ state.name }}</option>
+                  </select>
+                  <span class="text-danger"
+                    *ngIf="address.get('organization_state')?.invalid && address.get('organization_state')?.touched">
+                    State is required.
+                  </span>
+                </div>
+
+                <div class="mb-3" *ngIf="address.get('organization_state')?.value">
+                  <label for="city" class="form-label mb-2 text-muted">City:<span
+                      class="text-danger fs-5">*</span></label>
+                  <select id="city" formControlName="organization_city" class="form-select user_select">
+                    <option value="" disabled selected>Select your City</option>
+                    <option *ngFor="let city of filteredCities[i]" [value]="city.name">{{ city.name }}</option>
+                  </select>
+                  <span class="text-danger"
+                    *ngIf="address.get('organization_city')?.invalid && address.get('organization_city')?.touched">
+                    City is required.
+                  </span>
+                </div>
+
+                <div class="mb-3" *ngIf="address.get('organization_city')?.value">
+                  <label for="streetAddress" class="form-label mb-2 text-muted">Street Address:<span
+                      class="text-danger fs-5">*</span></label>
+                  <textarea formControlName="organization_street" id="streetAddress" class="form-control user_select"
+                    placeholder="Enter Street Address" rows="3"></textarea>
+                  <span class="text-danger"
+                    *ngIf="address.get('organization_street')?.invalid && address.get('organization_street')?.touched">
+                    Street Address is required.
+                  </span>
+                </div>
+
+                <button [disabled]="i === 0" (click)="removeOrganizationAddress(i)" type="button" class="btn btn-danger btn-sm mb-3">
+                  Remove Address
+                </button>
+              </div>
+              <hr />
+
+            </div>
+          </div>
+
+          <div class="mt-2 d-flex justify-content-center">
+            <button type="button" (click)="addOrganizationAddress()" class="btn btn-success btn-sm">
+              Add Other Address
+            </button>
+          </div>
+
+          <hr />
+          <div class="d-flex justify-content-end gap-4">
+            <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" [disabled]="addOrganizationForm.invalid"
+              data-bs-dismiss="modal">
+              {{ editMode ? "Edit Organization" : "Add Organization" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="main d-flex justify-content-center pt-3 pb-3">
+    <div class="main_content row border rounded-5 p-2 bg-white shadow box-area">
+        <div class="col-md-12 wrapper_box">
+            <div class="row align-items-center">
+                <div class="header-text mb-4">
+                    <h2>Register User</h2>
+                    <p>User, fill your details</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

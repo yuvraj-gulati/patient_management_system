@@ -1,0 +1,212 @@
+[
+  {
+    "organizationName": "Alpha Tech Inc.",
+    "businessKey": "AT1001",
+    "email": "contact@alphatech.com",
+    "mobileNumber": "1234567890",
+    "faxNumber": "0987654321",
+    "address": [
+      {
+        "country": "India",
+        "state": "California",
+        "city": "San Francisco",
+        "streetAddress": "101 Main St"
+      },
+      {
+        "country": "Australia",
+        "state": "California",
+        "city": "Los Angeles",
+        "streetAddress": "202 First Ave"
+      }
+    ]
+  },
+  {
+    "organizationName": "Beta Innovations",
+    "businessKey": "BI2002",
+    "email": "info@betainnovations.com",
+    "mobileNumber": "2345678901",
+    "faxNumber": "1987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Ontario",
+        "city": "Toronto",
+        "streetAddress": "303 Queen St"
+      },
+      {
+        "country": "Australia",
+        "state": "Quebec",
+        "city": "Montreal",
+        "streetAddress": "404 King St"
+      }
+    ]
+  },
+  {
+    "organizationName": "Gamma Enterprises",
+    "businessKey": "GE3003",
+    "email": "support@gammaenterprises.com",
+    "mobileNumber": "3456789012",
+    "faxNumber": "2987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "505 Oxford St"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "606 Piccadilly"
+      }
+    ]
+  },
+  {
+    "organizationName": "Delta Solutions",
+    "businessKey": "DS4004",
+    "email": "sales@deltasolutions.com",
+    "mobileNumber": "4567890123",
+    "faxNumber": "3987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "707 George St"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "808 Collins St"
+      }
+    ]
+  },
+  {
+    "organizationName": "Epsilon Technologies",
+    "businessKey": "ET5005",
+    "email": "inquiry@epsilontechnologies.com",
+    "mobileNumber": "5678901234",
+    "faxNumber": "4987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "909 Marienplatz"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1010 Alexanderplatz"
+      }
+    ]
+  },
+  {
+    "organizationName": "Zeta Industries",
+    "businessKey": "ZI6006",
+    "email": "hello@zetaindustries.com",
+    "mobileNumber": "6789012345",
+    "faxNumber": "5987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1111 Shibuya"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1212 Namba"
+      }
+    ]
+  },
+  {
+    "organizationName": "Eta Solutions",
+    "businessKey": "ES7007",
+    "email": "contact@etasolutions.com",
+    "mobileNumber": "7890123456",
+    "faxNumber": "6987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1313 Nariman Point"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1414 MG Road"
+      }
+    ]
+  },
+  {
+    "organizationName": "Theta Corporation",
+    "businessKey": "TC8008",
+    "email": "info@thetacorp.com",
+    "mobileNumber": "8901234567",
+    "faxNumber": "7987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1515 Paulista Ave"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1616 Copacabana"
+      }
+    ]
+  },
+  {
+    "organizationName": "Iota Enterprises",
+    "businessKey": "IE9009",
+    "email": "contact@iotaenterprises.com",
+    "mobileNumber": "9012345678",
+    "faxNumber": "8987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1717 Mandela Square"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1818 Table Mountain"
+      }
+    ]
+  },
+  {
+    "organizationName": "Kappa Solutions",
+    "businessKey": "KS1010",
+    "email": "support@kappasolutions.com",
+    "mobileNumber": "0123456789",
+    "faxNumber": "9987654321",
+    "address": [
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "1919 Champs-Élysées"
+      },
+      {
+        "country": "Australia",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "streetAddress": "2020 Old Port"
+      }
+    ]
+  }
+]

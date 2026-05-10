@@ -1,0 +1,24 @@
+<section class="d-flex">
+    <div class="sidebar" style="width: 20%;">
+        <app-sidebar [active] ="1" />
+    </div>
+    <div class="main" style="width: 80%;">
+        <app-header />
+
+        <div class="main_content ">
+            <div class="heading d-flex justify-content-center mt-3 mb-3">
+                <h2 class="font_bold">Patient Disease Analysis</h2>
+            </div>
+
+         <div class="chart">
+            <app-bar-chart />
+
+            <app-pie-chart />
+
+            <app-line-chart />
+
+            <app-doughnut-chart />
+         </div>
+        </div>
+    </div>
+</section>

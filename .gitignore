@@ -1,0 +1,16 @@
+# Backend (.NET)
+Backend/bin/
+Backend/obj/
+Backend/.vs/
+
+# Frontend (Angular)
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.angular/
+Frontend/.vs/
+
+# Environment files
+.env
+
+# Logs
+*.log

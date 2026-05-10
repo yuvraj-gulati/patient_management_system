@@ -1,0 +1,65 @@
+.main{
+    background: #ecf0f3;
+    width: 100%;
+  }
+  
+  .main_content{
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+  }
+
+
+
+  .modal-dialog {
+    max-width: 500px;
+  }
+  
+
+  .modal-content{
+    max-width: 500px;
+  }
+
+    
+
+    
+    ::placeholder {
+      font-size: 16px;
+    }
+    
+
+    
+    span{
+        font-weight: 500;
+        font-size: 13px;
+    }
+    
+    label{
+        font-weight: 500;
+    }
+  
+    .user_select {
+      background-color: rgb(247, 246, 246);
+    }
+  
+    .border_right_radius{
+      border-right: transparent;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    
+    @media only screen and (max-width: 768px) {
+      .box-area {
+        margin: 0 10px;
+      }
+    
+      .left-box {
+        height: 100px;
+        overflow: hidden;
+      }
+    
+      .right-box {
+        padding: 20px;
+      }
+    }
+    

@@ -1,0 +1,34 @@
+li {
+    font-size: 18px;
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  li > i {
+    padding-top: 15px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  li > a {
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+  }
+
+  /* a:hover{
+    transform: scale(2px);
+  } */
+  
+  @media (min-width: 992px) {
+    .nav {
+      position: absolute;
+      right: 9%;
+    }
+  }
+
+    @media (max-width: 992px) {
+      .registerBtn{
+        margin-bottom: 10px;
+      }
+  }
+  

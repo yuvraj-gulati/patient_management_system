@@ -1,0 +1,128 @@
+<section class="d-flex">
+    <div class="sidebar" style="width: 20%;">
+        <app-sidebar [active]="2" />
+    </div>
+    <div class="main" style="width: 80%;">
+        <app-header />
+
+        <div class="main_wrapper container">
+            <h1 class="text-center pt-2 pb-4">Patient Information</h1>
+
+            <div class="d-flex subNav justify-content-between mb-2">
+                <div class="d-flex justify-content-start gap-4 ">
+                    <span>
+                        <input style="width: 250px; padding: 4px 0; margin-right: 10px;" type="file" (change)="onFileChange($event)" />
+                        <button class="btn btn-success mb-2" (click)="uploadExcel()">
+                            <i class="fa-solid fa-upload"></i>
+                            Upload Excel
+                        </button>
+                    </span>
+
+                    <button (click)="downloadExcelTemplate()" class="btn btn-secondary mb-2">
+                        <i class="fa-solid fa-download"></i>
+                        Download template
+                    </button>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addPatientModal">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Patient
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="d-flex gap-4 search-container mb-2" style="position: relative;">
+                
+                <input type="text" class="form-control searchingInput" placeholder="Search by First Name or Last Name" [(ngModel)]="searchText" (input)="applySearch()" />
+                <button class="btn customSearchingBtn"  (click)="searching()" >Search </button>
+            </div> -->
+
+            <div class=" table-responsive rounded-3 shadow">
+                <table class="table table-bordered table-hover ">
+                    <thead class="thead-dark" style="background-color: darkblue;">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Mobile Number</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr *ngFor="let patientInfo of paginatedPatientInfo(); let i = index">
+                            <th scope="row">{{i + 1}}</th>
+                            <td>{{patientInfo.patientFirstName}}</td>
+                            <td>{{patientInfo.patientLastName}}</td>
+                            <td>{{patientInfo.patientMobileNumber | phoneFormat }}</td>
+                            <td>{{patientInfo.patientStreetAddress}}, {{patientInfo.patientState}}, {{patientInfo.patientCountry}}</td>
+                            <td>{{patientInfo.patientGender}}</td>
+                            <td class="d-flex text-start gap-4">
+                                <span class="bg-light">
+                                    <i class="fa-solid fa-trash" data-bs-toggle="modal" data-bs-target="#deletePatient" data-toggle="tooltip" data-placement="top"
+                                    (click)="deletePatient(patientInfo.id)"
+                                        title="Delete" style="color: red; font-size: 20px; cursor: pointer;">
+                                    </i>
+                                </span>
+
+                                <span>
+                                    <i data-bs-toggle="modal" data-bs-target="#addPatientModal"
+                                        class="fa-solid fa-pen-to-square" (click)="updatePatient(patientInfo)"
+                                        data-toggle="tooltip" data-placement="top" title="edit"
+                                        style="color: rgb(146, 10, 237); font-size: 20px; cursor: pointer;">
+                                    </i>
+                                </span>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+
+                <nav class="d-flex justify-content-between px-3"  aria-label="...">
+                    <span class="d-flex  col-12 col-md-4">
+                        <p class=" mr-2 font_bold" style="color: rgb(137, 8, 228);">Records per page :</p>
+                        <select id="dropDownInput" class="form-select user_select custom-select" #selectDropdown (change)="onItemsPerPageChange(selectDropdown.value)">
+                            
+                            <option class="select-option" [value]="5" [selected]="itemsPerPage === 5">5</option>
+                            <option class="select-option" [value]="10" [selected]="itemsPerPage === 10">10</option>
+                            <option class="select-option" [value]="20" [selected]="itemsPerPage === 20">20</option>
+                        </select>
+                    </span>
+
+                    <ul class="pagination ">
+                        <li class="page-item" [class.disabled]="currentPage === 1" style="cursor: pointer;">
+                            <a class="page-link" (click)="onPageChange(currentPage - 1)" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item" *ngFor="let page of totalPages()" [class.active]="currentPage === page"
+                            style="cursor: pointer;">
+                            <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+                        </li>
+
+                        <li class="page-item" [class.disabled]="currentPage === totalPages().length"
+                            style="cursor: pointer;">
+                            <a class="page-link" (click)="onPageChange(currentPage + 1)" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+            <app-add-patient-modal></app-add-patient-modal>
+
+            <app-delete-patient-modal />
+
+        </div>
+    </div>
+</section>

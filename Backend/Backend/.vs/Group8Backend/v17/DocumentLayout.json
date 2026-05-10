@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|f:\\office\\office1\\prashant\\full stack\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|f:\\office\\office1\\prashant\\full stack\\backend\\backend\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|f:\\office\\office1\\prashant\\full stack\\backend\\backend\\controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|solutionrelative:controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200057_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802195233_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|f:\\office\\office1\\prashant\\full stack\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB7B8452-D8D4-4515-886E-EE5684D0E9C0}|Group8Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationAddressModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Service\\Interface\\IOrganizationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Service\\Implementation\\OrganizationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\ApplicationDbContext\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationModelDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IOrganizationRespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\OrganizationRespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationAddressDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200830_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IPatientRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IUserRespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\PatientRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\UserRespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrganizationAddressModel.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationAddressModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationAddressModel.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationAddressModel.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationAddressModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:14:54.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrganizationService.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Service\\Interface\\IOrganizationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Service\\Interface\\IOrganizationService.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Service\\Interface\\IOrganizationService.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Service\\Interface\\IOrganizationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:14:14.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrganizationService.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Service\\Implementation\\OrganizationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Service\\Implementation\\OrganizationService.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Service\\Implementation\\OrganizationService.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Service\\Implementation\\OrganizationService.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAYwD8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:40:50.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:40:16.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\ApplicationDbContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\ApplicationDbContext\\ApplicationDbContext.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\ApplicationDbContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\ApplicationDbContext\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:55:03.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Controllers\\PatientController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:46:04.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrganizationModel.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationModel.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationModel.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Entities\\OrganizationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:14:59.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrganizationController.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\Controllers\\OrganizationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrganizationController.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\Controllers\\OrganizationController.cs",
+              "RelativeToolTip": "Controllers\\OrganizationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:17:32.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrganizationModelDto.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationModelDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationModelDto.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationModelDto.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationModelDto.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwBoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:14:05.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IOrganizationRespository.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IOrganizationRespository.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IOrganizationRespository.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IOrganizationRespository.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IOrganizationRespository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:06:23.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrganizationRespository.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\OrganizationRespository.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\OrganizationRespository.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\OrganizationRespository.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\OrganizationRespository.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAgwFgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:55:54.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrganizationAddressDto.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationAddressDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationAddressDto.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationAddressDto.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Shared\\Model\\OrganizationAddressDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:13:52.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20240802200830_first.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200830_first.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200830_first.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200830_first.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200830_first.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:08:31.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IPatientRepository.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IPatientRepository.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IPatientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:03:18.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserRespository.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IUserRespository.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IUserRespository.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IUserRespository.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Interface\\IUserRespository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:06:30.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\PatientRepository.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\PatientRepository.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\PatientRepository.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAApwHwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:43:26.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240802200057_first.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200057_first.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200057_first.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200057_first.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802200057_first.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:00:58.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserRespository.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\UserRespository.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\UserRespository.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\UserRespository.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Implementation\\UserRespository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAlwBgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:57:09.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240802195233_first.cs",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802195233_first.cs",
+              "RelativeDocumentMoniker": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802195233_first.cs",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802195233_first.cs",
+              "RelativeToolTip": "..\\..\\smartData_Group8_Backend\\Group8Backend.Domain\\Migrations\\20240802195233_first.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:52:34.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\office\\office1\\Prashant\\Full stack\\Backend\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-02T19:28:53.119Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

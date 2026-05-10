@@ -1,0 +1,47 @@
+{
+    "101": [
+      { "name": "Mumbai" },
+      { "name": "Pune" },
+      { "name": "Nagpur" }
+    ],
+    "102": [
+      { "name": "Bangalore" },
+      { "name": "Mysore" },
+      { "name": "Hubli" }
+    ],
+    "103": [
+      { "name": "Chennai" },
+      { "name": "Coimbatore" },
+      { "name": "Madurai" }
+    ],
+    "201": [
+      { "name": "Sydney" },
+      { "name": "Melbourne" },
+      { "name": "Brisbane" }
+    ],
+    "202": [
+      { "name": "Sydney" },
+      { "name": "Melbourne" },
+      { "name": "Brisbane" }
+    ],
+    "203": [
+      { "name": "Brisbane" },
+      { "name": "Sydney" },
+      { "name": "Melbourne" }
+    ],
+    "301": [
+      { "name": "Tokyo" },
+      { "name": "Yokohama" },
+      { "name": "Osaka" }
+    ],
+    "302": [
+      { "name": "Osaka" },
+      { "name": "Kyoto" },
+      { "name": "Kobe" }
+    ],
+    "303": [
+      { "name": "Sapporo" },
+      { "name": "Asahikawa" },
+      { "name": "Hakodate" }
+    ]
+  }

@@ -1,0 +1,45 @@
+.piecharts {
+  width: 96%;
+  margin: 0 20px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  /* background: #ebe8e8; */
+
+}
+
+li {
+  font-weight: bold;
+}
+
+
+.info-card {
+  background: #feeded;
+  border-radius: 12px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 20px;
+}
+
+.info-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-card p, .info-card ul {
+  font-size: 0.9rem;
+}
+
+.info-card ul {
+  padding-left: 20px;
+}
+
+.info-card ul li {
+  margin-bottom: 5px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .content{
+    margin-left: 80px;
+  }
+}
+

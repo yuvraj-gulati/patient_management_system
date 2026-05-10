@@ -1,0 +1,189 @@
+<div class="main d-flex justify-content-center pt-3 pb-3">
+  <div class="main_content row border rounded-5 p-2 bg-white shadow box-area">
+    <div class="col-md-12 wrapper_box">
+      <div class="row align-items-center">
+        <div class="header-text mb-4">
+          <h2>Register User</h2>
+          <p>User, fill your details</p>
+        </div>
+
+        <form [formGroup]="registerUserForm" (submit)="onSubmitForm()" autocomplete="off">
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label class="form-label mb-2 text-muted" for="UserName">Username <span
+                  class="text-danger fs-5">*</span></label>
+              <input id="UserName" type="text" class="form-control mb-2 form-control-lg bg-light fs-6" name="username"
+                formControlName="username" placeholder="Enter Username" autofocus />
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('username')?.touched &&
+                  registerUserForm.get('username')?.hasError('required')
+                ">* UserName Field is required</span>
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('username')?.touched &&
+                  registerUserForm.get('username')?.hasError('pattern')
+                ">* Username should only contains alphabets</span>
+            </div>
+
+            <div class="mb-3 col-md-6 d-flex flex-column">
+              <label for="PhoneNumber" class="form-label mb-2 text-muted">User Phone Number
+                <span class="text-danger fs-5">*</span></label>
+
+              <input name="userPhone" id="PhoneNumber" class="form-control mb-2 form-label bg-light fx-6"
+                formControlName="userPhone" prefix="+91 " [showMaskTyped]="true" type="text" mask="(000)-000-0000" />
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('userPhone')?.touched &&
+                  registerUserForm.get('userPhone')?.hasError('required')
+                ">* User Phone Number Field is required</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label class="form-label mb-2 text-muted" for="DOB">User DOB <span
+                  class="text-danger fs-5">*</span></label>
+              <input id="DOB" type="date" max="{{ getMaxDate() | date : 'yyyy-MM-dd' }}"
+                class="form-control mb-2 form-control-lg bg-light fs-6" name="userDOB" formControlName="userDOB"
+                placeholder="Enter user DOB" />
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('userDOB')?.touched &&
+                  registerUserForm.get('userDOB')?.hasError('required')
+                ">* DOB Field is required</span>
+            </div>
+
+            <div class="mb-3 col-md-6">
+              <label class="form-label mb-2 text-muted" for="dropDownInput">User Gender <span
+                  class="text-danger fs-5">*</span></label>
+              <select id="dropDownInput" class="form-select user_select" name="userGender" formControlName="userGender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('userGender')?.touched &&
+                  registerUserForm.get('userGender')?.hasError('required')
+                ">* Gender Field is required</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-md-12 d-flex flex-column">
+              <label for="email" class="form-label mb-2 text-muted">User email <span
+                  class="text-danger fs-5">*</span></label>
+
+              <input name="userEmail" id="email" placeholder="Enter user email"
+                class="form-control mb-2 form-label bg-light fx-6" formControlName="userEmail" type="email" />
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('userEmail')?.touched &&
+                  registerUserForm.get('userEmail')?.hasError('required')
+                ">* Email Field is required</span>
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('userEmail')?.touched &&
+                  registerUserForm.get('userEmail')?.hasError('email') &&
+                  registerUserForm.get('userEmail')?.hasError('pattern')
+                ">* Must have a valid email</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-md-6 d-flex flex-column">
+              <label for="user_password" class="form-label mb-2 text-muted">User Password <span
+                  class="text-danger fs-5">*</span></label>
+
+              <div class="d-flex align-items-center">
+                <input name="userPassword" id="user_password" placeholder="Create your password"
+                  class="form-control mb-2 bg-light" formControlName="userPassword"
+                  [type]="showPassword ? 'text' : 'password'" />
+                <span (click)="passwordShowHide()" class=" user_select d-flex align-items-center"
+                  style="cursor: pointer; margin-left: -40px;  padding-bottom: 10px;">
+                  <i class="fa-solid fa-eye" [hidden]="!showPassword"></i>
+                  <i class="fa-solid fa-eye-slash" [hidden]="showPassword"></i>
+                </span>
+              </div>
+
+              <span class="text-danger" *ngIf="
+                   registerUserForm.get('userPassword')?.touched &&
+                  registerUserForm.get('userPassword')?.hasError('required')
+                ">* Password Field is required</span>
+
+              <div class="text-sm" *ngIf="registerUserForm.get('userPassword')?.dirty">
+                <span class="block text-danger" style="display: block;"
+                  [hidden]="registerUserForm.get('userPassword')?.value?.match('^(?=.*[A-Z])') ? true : false">At least
+                  one uppercase letter.</span>
+                <span class="block text-danger" style="display: block;"
+                  [hidden]="registerUserForm.get('userPassword')?.value?.match('(?=.*[a-z])') ? true : false">At least
+                  one lowercase letter.</span>
+                <span class="block text-danger" style="display: block;"
+                  [hidden]="registerUserForm.get('userPassword')?.value?.match('(.*[0-9].*)') ? true : false">At least
+                  one digit.</span>
+                <span class="block text-danger" style="display: block;"
+                  [hidden]="registerUserForm.get('userPassword')?.value?.match('(?=.*[!@#$%^&*])') ? true : false">At
+                  least one special character.</span>
+                <span class="block text-danger" style="display: block;"
+                  [hidden]="registerUserForm.get('userPassword')?.value?.match('.{8,}') ? true : false">At least 8
+                  characters long.</span>
+              </div>
+            </div>
+
+            <div class="mb-3 col-md-6 d-flex flex-column">
+              <label for="user_confirm_password" class="form-label mb-2 text-muted">Confirm User Password
+                <span class="text-danger fs-5">*</span></label>
+              <div class="d-flex align-items-center">
+                <input name="userConfirmPassword" id="user_confirm_password" placeholder="Confirm your password"
+                  class="form-control mb-2 form-label bg-light fx-6" formControlName="userConfirmPassword"
+                  [type]="showConfirmPassword ? 'text' : 'password'" />
+
+                <span (click)="confirmPasswordShowHide()" class="user_select d-flex align-items-center"
+                  style="cursor: pointer; margin-left: -40px;  padding-bottom: 10px;">
+
+                  <i class="fa-solid fa-eye" [hidden]="!showConfirmPassword"></i>
+                  <i class="fa-solid fa-eye-slash" [hidden]="showConfirmPassword"></i>
+                </span>
+              </div>
+
+              <span class="text-danger" *ngIf="
+                  registerUserForm.get('userConfirmPassword')?.touched &&
+                  registerUserForm.get('userConfirmPassword')?.hasError('required')
+                ">*Confirm Password Field is required</span>
+
+              <span class="text-danger"
+                *ngIf="registerUserForm?.errors?.['mismatch'] && registerUserForm.get('userConfirmPassword')?.touched ">
+                * Confirm Password doesn't match with Password
+              </span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="UserAddress" class="form-label mb-2 text-muted">User Address <span
+                class="text-danger fs-5">*</span></label>
+            <textarea name="userAddress" id="UserAddress" placeholder="Enter the student address"
+              class="form-control mb-2 form-control-lg bg-light fs-6" formControlName="userAddress" rows="2"></textarea>
+
+            <span class="text-danger" *ngIf="
+                registerUserForm.get('userAddress')?.touched &&
+                registerUserForm.get('userAddress')?.hasError('required')
+              ">* Address Field is required</span>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="text-center">
+              Already Registered?
+              <a routerLink="/auth/login" class="text-primary font_bold">Login</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary ms-auto font_bold" style="width: 120px"
+              [disabled]="registerUserForm.invalid">
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

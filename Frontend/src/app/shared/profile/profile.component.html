@@ -1,0 +1,83 @@
+<section class="d-flex">
+    <div class="sidebar" style="width: 20%;">
+        <app-sidebar [active]="0" />
+    </div>
+    <div class="main" style="width: 80%;">
+        <app-header />
+
+        <div class="main_content container d-flex justify-content-center">
+            <div class="row border rounded-5 p-2 bg-white shadow box-area">
+                <div class=" wrapper_box">
+                    <div class="row align-items-center">
+                        <div class="header-text mb-4">
+                            <h2>User Profile</h2>
+                        </div>
+
+                        <div>
+                            <div class="row">
+                                <div class="mb-3 col-md-6 d-flex flex-column">
+                                    <label class="form-label mb-2 text-muted" for="UserName">Username <span
+                                            class="text-danger fs-5">:</span></label>
+                                    <p>{{userDetails.username}}</p>
+                                </div>
+
+                                <div class="mb-3 col-md-6 d-flex flex-column">
+                                    <label for="PhoneNumber" class="form-label mb-2 text-muted">User Phone Number
+                                        <span class="text-danger fs-5">:</span></label>
+                                    <p>{{userDetails.userPhone | phoneFormat}} </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label mb-2 text-muted" for="DOB">User DOB <span
+                                            class="text-danger fs-5">:</span></label>
+                                    <p>{{userDetails.userDOB}}</p>
+
+                                </div>
+
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label mb-2 text-muted" for="dropDownInput">User Gender <span
+                                            class="text-danger fs-5">:</span></label>
+                                    <p>{{userDetails.userGender}}</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3 col-md-6 d-flex flex-column">
+                                    <label for="email" class="form-label mb-2 text-muted">User email <span
+                                            class="text-danger fs-5">:</span></label>
+                                    <p>{{userDetails.userEmail}}</p>
+
+                                </div>
+                                <div class="mb-3 col-md-6 d-flex flex-column">
+                                    <label for="user_password" class="form-label mb-2 text-muted">User Password
+                                        <span class="text-danger fs-5">:</span></label>
+                                    <div class="d-flex">
+                                        <p style="margin-right: 20px;" [hidden]="!showPassword" >{{userDetails.userPassword}}</p>
+                                        <p style="margin-right: 20px;" [hidden]="showPassword">{{maskedPassword}}</p>
+                                        
+                                        <span (click)="showHidePassword()" style="cursor: pointer;">
+                                            <i class="fa-solid fa-eye"  [hidden]="!showPassword"></i>
+                                            <i class="fa-solid fa-eye-slash" [hidden]="showPassword"></i>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="UserAddress" class="form-label mb-2 text-muted">User Address <span
+                                        class="text-danger fs-5">:</span></label>
+
+                                <p>{{userDetails.userAddress}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
