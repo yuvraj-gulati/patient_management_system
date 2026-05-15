@@ -1,6 +1,6 @@
 # Backend (.NET)
-Backend/bin/
-Backend/obj/
+**/bin/
+**/obj/
 Backend/.vs/
 
 # Frontend (Angular)

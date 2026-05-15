@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Group8Backend.Domain\Group8Backend.Domain.csproj" />
-    <ProjectReference Include="..\Group8Backend.Shared\Group8Backend.Shared.csproj" />
+    <ProjectReference Include="..\Backend.Domain\Group8Backend.Domain.csproj" />
+    <ProjectReference Include="..\Backend.Shared\Group8Backend.Shared.csproj" />
   </ItemGroup>
 
 </Project>
